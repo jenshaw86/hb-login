@@ -1,5 +1,6 @@
 {
   "name": "hb-login",
+  "homepage": "http://jenshaw86.github.io/hb-login",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -17,7 +18,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "jest",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -37,6 +40,7 @@
   "devDependencies": {
     "@babel/core": "^7.7.4",
     "@babel/preset-env": "^7.7.4",
-    "babel-jest": "^24.9.0"
+    "babel-jest": "^24.9.0",
+    "gh-pages": "^2.1.1"
   }
 }

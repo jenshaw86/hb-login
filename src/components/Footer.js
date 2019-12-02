@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import Container from 'react-bootstrap/Container';
 
 const Footer = props => {
 
@@ -8,19 +9,19 @@ const Footer = props => {
       case '/login':
         return (
           <>
-            <Link to='/reset'>Reset Password</Link> | <Link to='/signup'>Sign Up</Link>
+            <p><Link to='/reset'>Reset Password</Link> | <Link to='/signup'>Sign Up</Link></p>
           </>
         )
       case '/signup':
         return (
           <>
-            <Link to='/reset'>Reset Password</Link> | <Link to='/login'>Login</Link>
+            <p><Link to='/reset'>Reset Password</Link> | <Link to='/login'>Login</Link></p>
           </>
         )
       case '/reset':
         return (
           <>
-            <Link to='/login'>Login</Link> | <Link to='/signup'>Sign Up</Link>
+            <p><Link to='/login'>Login</Link> | <Link to='/signup'>Sign Up</Link></p>
           </>
         )
       default:
@@ -28,9 +29,9 @@ const Footer = props => {
   }
 
   return (
-    <>
+    <Container className="footer">
       {displayLinks(props.path)}
-    </>
+    </Container>
   )
 }
 

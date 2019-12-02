@@ -1,6 +1,7 @@
 import React, {useState} from 'react';
 import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
+import Container from 'react-bootstrap/Container';
 import createErrorMessage from '../utils/createErrorMessage';
 const validate = require('../utils/validate');
 
@@ -66,9 +67,9 @@ const SignupLoginForm = props => {
   }
 
   return (
-    <>
+    <Container>
       <h2>{displayText(props.path)}</h2>
-      <Form noValidate onSubmit={handleSubmit}>
+      <Form noValidate onSubmit={handleSubmit} className="form">
         <Form.Group>
           <Form.Label>Email Address</Form.Label>
           <Form.Control type='email' name='email' value={email} placeholder='Email' onChange={ev => handleChange(ev)} required />
@@ -79,9 +80,9 @@ const SignupLoginForm = props => {
           <Form.Control type='password' name='password' value={password} placeholder='Password' onChange={ev => handleChange(ev)} required />
           {displayErrorMessage(errors.password)}
         </Form.Group>
-        <Button variant='primary' type='submit' value='submit'>{displayText(props.path)}</Button>
+        <Button variant='light' type='submit' value='submit'>{displayText(props.path)}</Button>
       </Form>
-    </>
+    </Container>
   )
 }
 

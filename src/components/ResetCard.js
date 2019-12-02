@@ -5,8 +5,7 @@ import Footer from './Footer';
 
 const ResetCard = props => {
   return (
-    <Container>
-      <h2>Reset Password</h2>
+    <Container className="card">
       <Reset />
       <Footer path={props.match.path} />
     </Container>

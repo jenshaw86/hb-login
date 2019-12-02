@@ -5,7 +5,7 @@ import SignupLoginForm from './SignupLoginForm';
 
 export const SignupCard = props => {
   return (
-    <Container>
+    <Container className="card">
       <SignupLoginForm path={props.match.path} />
       <Footer path={props.match.path} />
     </Container>

@@ -5,7 +5,7 @@ import Footer from './Footer';
 
 export const LoginCard = props => {
   return (
-    <Container>
+    <Container className="card">
       <SignupLoginForm path={props.match.path} />
       <Footer path={props.match.path} />
     </Container>

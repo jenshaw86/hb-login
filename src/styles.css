@@ -1,0 +1,29 @@
+.app {
+  border: none;
+}
+
+.card {
+  padding: 20px 35px;
+  width: 50%;
+  height: 400px;
+  background: #FE855C;
+}
+
+h1, h2 {
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+a {
+  color: black;
+}
+
+form {
+  margin: 0 auto;
+  width: 90%;
+}
+
+.footer {
+  padding-top: 20px;
+  width: 90%;
+}
