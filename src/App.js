@@ -15,12 +15,12 @@ function App() {
 
       {/* Routes */}
       <Switch>
-        <Route exact path='/'>
-          <Redirect to='/login' />
-        </Route>
         <Route exact path='/login' component={LoginCard} />
         <Route exact path='/signup' component={SignupCard} />
         <Route exact path='/reset' component={ResetCard} />
+        <Route path='/'>
+          <Redirect to='/login' />
+        </Route>
       </Switch>
     </Container>
   );
