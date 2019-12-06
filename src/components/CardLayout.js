@@ -2,13 +2,15 @@ import React from 'react';
 import Container from 'react-bootstrap/Container';
 import displayLinks from '../utils/displayLinks';
 
-const Footer = props => {
+const CardLayout = props => {
   return (
-    <Container className="footer">
+    <Container className="form-card">
       {props.children}
-      <p>{displayLinks(props.path)}</p>
+      <div className="links">
+        <p>{displayLinks(props.path)}</p>
+      </div>
     </Container>
   )
 }
 
-export default Footer;
+export default CardLayout;

@@ -12,7 +12,9 @@ const Reset = () => {
           <Form.Control type='email' name='email' placeholder='Email' required />
           <Form.Text>We'll send you an email to reset your password.</Form.Text>
         </Form.Group>
-        <Button variant='light' type='submit' value='submit'>Reset Password</Button>
+        <div className="button-bar">
+          <Button variant='light' type='submit' value='submit'>Reset Password</Button>
+        </div>
       </Form>
     </>
   )

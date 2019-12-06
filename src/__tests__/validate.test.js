@@ -1,4 +1,5 @@
 const validate = require('../utils/validate')
+// import validate from '../utils/validate';
 
 describe ('password validation', () => {
   it('validates password', () => {

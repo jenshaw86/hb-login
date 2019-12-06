@@ -1,4 +1,3 @@
-// const handleError = require('./handleError')
 import createErrorMessage from '../utils/createErrorMessage'
 
 describe('error handling', () => {
