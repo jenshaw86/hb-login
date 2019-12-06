@@ -4,10 +4,13 @@
 const emailRegex = /^\w+@[a-z]+.[a-z]{3}$/
 
 const validate = (type, value) => {
+  // both cases return a boolean
   switch(type) {
     case 'email':
+      // does the input match the regex requirements?
       return emailRegex.test(value);
     case 'password':
+      // is the password at least 8 characters?
       return value.length < 8 ? false : true;
     default:
   }

@@ -1,9 +1,7 @@
 import React from 'react';
 import { Switch, Route, Redirect } from 'react-router-dom';
 import Container from 'react-bootstrap/Container'
-import LoginCard from './components/LoginCard';
-import SignupCard from './components/SignupCard';
-import ResetCard from './components/ResetCard';
+import FormCard from './components/FormCard';
 import Header from './components/Header';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './styles.css';
@@ -15,9 +13,9 @@ function App() {
 
       {/* Routes */}
       <Switch>
-        <Route exact path='/login' component={LoginCard} />
-        <Route exact path='/signup' component={SignupCard} />
-        <Route exact path='/reset' component={ResetCard} />
+        <Route exact path='/login' component={FormCard} />
+        <Route exact path='/signup' component={FormCard} />
+        <Route exact path='/reset' component={FormCard} />
         <Route path='/'>
           <Redirect to='/login' />
         </Route>
