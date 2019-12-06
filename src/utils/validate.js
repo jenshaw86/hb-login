@@ -17,4 +17,3 @@ const validate = (type, value) => {
 }
 
 module.exports = validate;
-// export default validate;
