@@ -17,17 +17,20 @@ This login page is a code demonstration for [HomeBinder](https://www.homebinder.
 - The reset password form is not currently a functional feature.
 
 ***
-
 ## Getting Started
 View the project either via the [live site](http://jenshaw86.github.io/hb-login) or installation.
 
+
+## Installation Prerequesites
+Install **Node.js** and **npm**.
+
+
 ## Installation
+Clone or download this repository onto your local machine.
 
-Clone or download this repository.
+Enter the directory, and run `npm install` to install dependencies.
 
-From inside the directory, run `npm install` to install dependencies.
-
-When installation is complete, run `npm start` to start the server. The login page will open on your browser.
+And when installation is complete, run `npm start` to start the server. The login page should open on your browser.
 
 *** 
 
